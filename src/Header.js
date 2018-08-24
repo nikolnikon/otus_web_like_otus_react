@@ -8,7 +8,7 @@ import Logo from './Logo';
 class Header extends Component {
     render() {
         return (
-            <header className="header">
+            <header className={`header ${this.props.className}`}>
                 <div className="container header__container">
                     <div className="row">
                         <Logo className="header__logo"/>
