@@ -7,12 +7,11 @@ class Menu extends Component {
     render() {
         return (
             <nav className={`menu ${this.props.className}`}>
-                <a className="menu__item">Курсы</a>
-                <a className="menu__item">Мероприятия</a>
-                <a className="menu__item">Обучение</a>
-                <a className="menu__item">Работа в компаниях</a>
-                <a className="menu__item">Компаниям</a>
-                <a className="menu__item">Блог</a>
+                {
+                    this.props.items.map((item) =>
+                        <a className="menu__item" href={item.url} key={item.name}>{item.name}</a>
+                    )
+                }
             </nav>
         );
     }

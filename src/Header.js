@@ -12,7 +12,14 @@ class Header extends Component {
                 <div className="container header__container">
                     <div className="row">
                         <Logo className="header__logo"/>
-                        <Menu className="header__menu"/>
+                        <Menu className="header__menu" items={[
+                            {name: 'Курсы', url: '#'},
+                            {name: 'Мероприятия', url: '#'},
+                            {name: 'Обучение', url: '#'},
+                            {name: 'Работа в компаниях', url: '#'},
+                            {name: 'Компаниям', url: '#'},
+                            {name: 'Блог', url: '#'},
+                        ]}/>
                     </div>
                 </div>
             </header>

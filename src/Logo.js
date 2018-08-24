@@ -7,7 +7,7 @@ class Logo extends Component {
     render() {
         return (
             <div className={`logo ${this.props.className}`}>
-                <a className="logo__image" href="/"/>
+                <a className="logo__image" href="/" />
             </div>
         );
     }
