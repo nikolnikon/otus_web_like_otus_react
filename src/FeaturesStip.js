@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
 import Strip from "./Strip";
-import FeaturesBlock from "./FeaturesBlock";
+import Feature from "./Feature";
 
 class FeaturesStrip extends Component {
     render() {
+        const {features} = this.props
         return (
             <Strip header={'Получите навыки для отличной карьеры в IT'}>
-                <FeaturesBlock features={this.props.features}/>
+                <div className="row row_wrapped row_justify_space-between">
+                {
+                    features.map((feature) =>
+                        <Feature
+                            image={feature.image}
+                            title={feature.title}
+                            description={feature.description}
+                            key={feature.title}
+                        />
+                    )
+                }
+            </div>
             </Strip>
         )
     }

@@ -8,31 +8,20 @@ import Logo from './Logo';
 class Header extends Component {
     render() {
         return (
-            <header className={`header ${this.props.className}`}>
-                {/*<Container className={'header__container'}>*/}
-                    {/*<div className="row">*/}
-                        {/*<Logo className="header__logo"/>*/}
-                        {/*<Menu className="header__menu" items={[*/}
-                            {/*{name: 'Курсы', url: '#'},*/}
-                            {/*{name: 'Мероприятия', url: '#'},*/}
-                            {/*{name: 'Обучение', url: '#'},*/}
-                            {/*{name: 'Работа в компаниях', url: '#'},*/}
-                            {/*{name: 'Компаниям', url: '#'},*/}
-                            {/*{name: 'Блог', url: '#'},*/}
-                        {/*]}/>*/}
-                    {/*</div>*/}
-                {/*</Container>*/}
+            <header className="header page__header">
                 <div className="container header__container">
                     <div className="row">
                         <Logo className="header__logo"/>
-                        <Menu className="header__menu" items={[
-                            {name: 'Курсы', url: '#'},
-                            {name: 'Мероприятия', url: '#'},
-                            {name: 'Обучение', url: '#'},
-                            {name: 'Работа в компаниях', url: '#'},
-                            {name: 'Компаниям', url: '#'},
-                            {name: 'Блог', url: '#'},
-                        ]}/>
+                        <Menu className="header__menu"
+                              items={[
+                                  {name: 'Курсы', url: '#'},
+                                  {name: 'Мероприятия', url: '#'},
+                                  {name: 'Обучение', url: '#'},
+                                  {name: 'Работа в компаниях', url: '#'},
+                                  {name: 'Компаниям', url: '#'},
+                                  {name: 'Блог', url: '#'},
+                              ]}
+                        />
                     </div>
                 </div>
             </header>

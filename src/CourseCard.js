@@ -3,7 +3,7 @@ import './CourseCard.css'
 
 class CourseCard extends Component {
     render() {
-        const {course} = this.props.course;
+        const {course} = this.props;
         return (
             <div className="course-card">
                 <div className="course-card__image">

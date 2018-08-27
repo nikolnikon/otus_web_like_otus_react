@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Header';
 import FeaturesStrip from './FeaturesStip';
+import CoursesStrip from './CoursesStrip';
+import Footer from "./Footer";
 
 const features = [
     {
@@ -40,16 +42,42 @@ const features = [
 ];
 
 const courses = [
-
+    {
+        name: 'Web-разработчик на Python',
+        description: 'Станьте fullstack-разработчиком уровня middle, спообным с нуля создавать современные ' +
+        'web-приложения.',
+        start_date: '13 августа',
+        duration: '5',
+        tags: ['Python ', 'Django ', 'ReactJS'],
+        logo:'https://via.placeholder.com/350x220/e8117f/ffffff',
+    },
+    {
+        name: 'Реляционные СУБД',
+        description: 'Станьте архитектором баз данных уровня middle, спообным проектировать структуру БД, выполнять ее' +
+        ' оптимизацию и решать другие задачи DBA.',
+        start_date: '28 сентября',
+        duration: '3',
+        tags: ['SQL ', 'PostgreSQL'],
+        logo:'https://via.placeholder.com/350x220/e8117f/ffffff',
+    },
+    {
+        name: 'Разработчик C++',
+        description: 'Станьте С++ разработчиком уровня middle, спообным создавать производительные приложения.',
+        start_date: '25 сентября',
+        duration: '5',
+        tags: ['С++ ', 'STL ', 'Boost'],
+        logo:'https://via.placeholder.com/350x220/e8117f/ffffff',
+    }
 ];
 
 class App extends Component {
     render() {
         return (
             <div className="page">
-                <Header className="page__header" />
+                <Header/>
                 <FeaturesStrip features={features}/>
-                <CoursesStrip courses={courses}/>
+                <CoursesStrip courses={courses} className="strip_background_grey"/>
+                <Footer/>
             </div>
         );
     }
