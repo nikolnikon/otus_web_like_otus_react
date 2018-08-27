@@ -39,12 +39,17 @@ const features = [
     }
 ];
 
+const courses = [
+
+];
+
 class App extends Component {
     render() {
         return (
             <div className="page">
                 <Header className="page__header" />
                 <FeaturesStrip features={features}/>
+                <CoursesStrip courses={courses}/>
             </div>
         );
     }
