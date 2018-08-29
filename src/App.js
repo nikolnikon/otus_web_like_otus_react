@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 // import logo from './logo.svg';
-import './App.css';
-import Header from './Header';
-import FeaturesStrip from './FeaturesStip';
-import CoursesStrip from './CoursesStrip';
-import Footer from "./Footer";
+import './App.css'
+import Header from './Header'
+import FeaturesStrip from './FeaturesStip'
+import CoursesStrip from './CoursesStrip'
+import EmployersStrip from './EmployersStrip'
+import MyFlickity from './MyFlickity'
+import Footer from "./Footer"
 
 const features = [
     {
@@ -77,6 +79,8 @@ class App extends Component {
                 <Header/>
                 <FeaturesStrip features={features}/>
                 <CoursesStrip courses={courses} className="strip_background_grey"/>
+                <EmployersStrip/>
+                {/*<MyFlickity/>*/}
                 <Footer/>
             </div>
         );
