@@ -50,7 +50,7 @@ const courses = [
         start_date: '13 августа',
         duration: '5',
         tags: ['Python ', 'Django ', 'ReactJS'],
-        logo:'https://via.placeholder.com/350x220/e8117f/ffffff',
+        logo: 'https://via.placeholder.com/350x220/e8117f/ffffff',
     },
     {
         name: 'Реляционные СУБД',
@@ -59,7 +59,7 @@ const courses = [
         start_date: '28 сентября',
         duration: '3',
         tags: ['SQL ', 'PostgreSQL'],
-        logo:'https://via.placeholder.com/350x220/e8117f/ffffff',
+        logo: 'https://via.placeholder.com/350x220/e8117f/ffffff',
     },
     {
         name: 'Разработчик C++',
@@ -67,9 +67,40 @@ const courses = [
         start_date: '25 сентября',
         duration: '5',
         tags: ['С++ ', 'STL ', 'Boost'],
-        logo:'https://via.placeholder.com/350x220/e8117f/ffffff',
+        logo: 'https://via.placeholder.com/350x220/e8117f/ffffff',
     }
 ];
+
+const employers = [
+    {
+        name: 'Яндекс',
+        logo: 'images/employers/yandex.png',
+    },
+    {
+        name: 'DataArt',
+        logo: 'images/employers/data_art.png',
+    },
+    {
+        name: 'Лаборатория Касперского',
+        logo: 'images/employers/kaspersky.png',
+    },
+    {
+        name: 'My Book',
+        logo: 'images/employers/mybook.png',
+    },
+];
+
+const employers_slider_settings = {
+    arrows: true,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    className: 'carousel',
+};
+
+// todo Вопрос. Надо ли протаскивать, например, settings через пропсы всех дочерних компонентов от App в Carousel или можно задать переменную employers_slider_settings в EmployersSlider? Тот же вопрос про employers.
 
 class App extends Component {
     render() {
@@ -78,7 +109,7 @@ class App extends Component {
                 <Header/>
                 <FeaturesStrip features={features}/>
                 <CoursesStrip courses={courses} className="strip_background_grey"/>
-                <EmployersStrip/>
+                <EmployersStrip settings={employers_slider_settings} employers={employers}/>
                 <Footer/>
             </div>
         );

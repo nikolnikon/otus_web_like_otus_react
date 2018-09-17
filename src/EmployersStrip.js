@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-import Strip from "./Strip"
-import EmployersSlider from "./EmployersSlider";
+import Strip from './Strip'
+import EmployersSlider from './EmployersSlider';
 
 class EmployersStrip extends Component {
     render() {
+        const {settings, employers} = this.props;
         return (
             <Strip header={'Нашим выпускникам предлагают работу'}>
-                <EmployersSlider/>
+                <EmployersSlider settings={settings} employers={employers}/>
             </Strip>
         )
     }

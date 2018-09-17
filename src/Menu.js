@@ -4,7 +4,7 @@ import './Menu.css'
 
 class Menu extends Component {
     render() {
-        const {className, items} = this.props
+        const {className, items} = this.props;
         return (
             <nav className={`menu ${className}`}>
                 {
