@@ -5,8 +5,8 @@ import Header from './Header'
 import FeaturesStrip from './FeaturesStip'
 import CoursesStrip from './CoursesStrip'
 import EmployersStrip from './EmployersStrip'
-import MyFlickity from './MyFlickity'
 import Footer from "./Footer"
+import EmployersSlider from "./EmployersSlider";
 
 const features = [
     {
@@ -80,7 +80,6 @@ class App extends Component {
                 <FeaturesStrip features={features}/>
                 <CoursesStrip courses={courses} className="strip_background_grey"/>
                 <EmployersStrip/>
-                {/*<MyFlickity/>*/}
                 <Footer/>
             </div>
         );

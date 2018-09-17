@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import './Menu.css';
+import React, { Component } from 'react'
+import './Menu.css'
 
-// todo Спросить, как отрендерить переменное число a внтри nav
 
 class Menu extends Component {
     render() {
