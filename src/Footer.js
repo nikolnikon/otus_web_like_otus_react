@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import './Footer.css';
 import Menu from './Menu';
 
+
+const footer_menu_items = [
+    {name: 'О компании', url: '#'},
+    {name: 'Отзывы', url: '#'},
+    {name: 'Контакты', url: '#'},
+];
+
 class Footer extends Component {
     render() {
         return (
@@ -13,11 +20,7 @@ class Footer extends Component {
                             <a href="#" className="social__icon social__icon_fb"/>
                         </div>
                         <Menu className={"footer__menu"}
-                              items={[
-                                  {name: 'О компании', url: '#'},
-                                  {name: 'Отзывы', url: '#'},
-                                  {name: 'Контакты', url: '#'},
-                              ]}
+                              items={footer_menu_items}
                         />
                     </div>
                     <div className="row footer__row">

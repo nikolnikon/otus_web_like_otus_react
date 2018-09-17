@@ -6,7 +6,6 @@ import FeaturesStrip from './FeaturesStip'
 import CoursesStrip from './CoursesStrip'
 import EmployersStrip from './EmployersStrip'
 import Footer from "./Footer"
-import EmployersSlider from "./EmployersSlider";
 
 const features = [
     {

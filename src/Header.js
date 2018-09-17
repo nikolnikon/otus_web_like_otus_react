@@ -3,6 +3,14 @@ import './Header.css';
 import Menu from './Menu';
 import Logo from './Logo';
 
+const header_menu_items = [
+    {name: 'Курсы', url: '#'},
+    {name: 'Мероприятия', url: '#'},
+    {name: 'Обучение', url: '#'},
+    {name: 'Работа в компаниях', url: '#'},
+    {name: 'Компаниям', url: '#'},
+    {name: 'Блог', url: '#'},
+];
 
 class Header extends Component {
     render() {
@@ -12,14 +20,7 @@ class Header extends Component {
                     <div className="row">
                         <Logo className="header__logo"/>
                         <Menu className="header__menu"
-                              items={[
-                                  {name: 'Курсы', url: '#'},
-                                  {name: 'Мероприятия', url: '#'},
-                                  {name: 'Обучение', url: '#'},
-                                  {name: 'Работа в компаниях', url: '#'},
-                                  {name: 'Компаниям', url: '#'},
-                                  {name: 'Блог', url: '#'},
-                              ]}
+                              items={header_menu_items}
                         />
                     </div>
                 </div>
