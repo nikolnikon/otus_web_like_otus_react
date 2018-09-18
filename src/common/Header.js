@@ -3,6 +3,8 @@ import './Header.css';
 import Menu from './Menu';
 import Logo from './Logo';
 
+// todo Вопрос. Где лучше объявлять переменные типа header_menu_items? Варианты, которые приходят на ум: App.js, Header.js (global scope), Header.js (внутри метода render). Последний вариант, как я понимаю, будет приводить к перерисовке Menu всякий раз, когда перерисовывается Header, т.к. при этом будут меняться props для Menu.
+
 const header_menu_items = [
     {name: 'Курсы', url: '#'},
     {name: 'Мероприятия', url: '#'},
