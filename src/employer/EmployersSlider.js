@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Carousel from './Carousel'
+import Carousel from '../common/Carousel'
 
 export default class EmployersSlider extends Component {
     render() {

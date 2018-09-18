@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Strip from './Strip';
+import Strip from '../common/Strip';
 import CourseCard from './CourseCard';
 
 class CoursesStrip extends Component {

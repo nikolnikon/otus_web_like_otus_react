@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Strip from './Strip'
+import Strip from '../common/Strip'
 import EmployersSlider from './EmployersSlider';
 
 class EmployersStrip extends Component {

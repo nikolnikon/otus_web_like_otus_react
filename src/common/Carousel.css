@@ -1,0 +1,18 @@
+.carousel {
+    padding: 40px;
+}
+
+.carousel .slick-prev:before, .carousel .slick-next:before {
+    color: #d7d7d7;
+}
+
+.carousel .slick-list .slick-track {
+    display: flex;
+}
+
+.carousel .slick-list .slick-track .slick-slide{
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
