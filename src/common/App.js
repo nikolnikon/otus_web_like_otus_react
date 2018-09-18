@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 // import logo from './logo.svg';
 import './App.css'
 import Header from './Header'
-import FeaturesStrip from './FeaturesStip'
-import CoursesStrip from './CoursesStrip'
-import EmployersStrip from './EmployersStrip'
+import FeaturesStrip from '../feature/FeaturesStip'
+import CoursesStrip from '../course/CoursesStrip'
+import EmployersStrip from '../employer/EmployersStrip'
 import Footer from "./Footer"
 
 const features = [
