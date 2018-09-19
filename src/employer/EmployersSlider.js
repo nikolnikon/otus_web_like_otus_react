@@ -9,7 +9,7 @@ export default class EmployersSlider extends Component {
             <Carousel>
                 {
                     employers.map((employer) =>
-                        <div>
+                        <div key={employer.name}>
                             <img src={employer.logo} alt={employer.name}/>
                         </div>
                     )
