@@ -1,0 +1,20 @@
+/*todo Вопрос. Юра призывал следовать методологии БЭМ в css. Но чтобы корректно вписать slick в верстку, пришлось подшаманить его стили, которые сделаны не по БЭМ. В итоге получил css правила, которые противоречат БЭМ. Это, как я понимаю, не избежно?*/
+
+.carousel {
+    padding: 40px;
+}
+
+.carousel .slick-prev:before, .carousel .slick-next:before {
+    color: #d7d7d7;
+}
+
+.carousel .slick-list .slick-track {
+    display: flex;
+}
+
+.carousel .slick-list .slick-track .slick-slide{
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}

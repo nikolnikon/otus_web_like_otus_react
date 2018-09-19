@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Strip from "./Strip";
+import Strip from "../common/Strip";
 import Feature from "./Feature";
 
 class FeaturesStrip extends Component {
