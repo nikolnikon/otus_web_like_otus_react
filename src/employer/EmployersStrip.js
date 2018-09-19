@@ -4,10 +4,10 @@ import EmployersSlider from './EmployersSlider';
 
 class EmployersStrip extends Component {
     render() {
-        const {settings, employers} = this.props;
+        const {employers} = this.props;
         return (
             <Strip header={'Нашим выпускникам предлагают работу'}>
-                <EmployersSlider settings={settings} employers={employers}/>
+                <EmployersSlider employers={employers}/>
             </Strip>
         )
     }

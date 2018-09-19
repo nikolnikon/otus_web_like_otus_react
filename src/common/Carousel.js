@@ -4,16 +4,24 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import './Carousel.css'
 
-export default class Carousel extends Component {
-    render() {
-        const {settings} = this.props;
 
-        return (
-            <div className="carousel">
-                <Slider {...settings}>
-                    {this.props.children}
-                </Slider>
-            </div>
-        );
-    }
-}
+const Carousel = (props) => {
+    const settings = {
+        arrows: true,
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        className: 'carousel',
+    };
+    return (
+        <div className="carousel">
+            <Slider {...settings}>
+                {props.children}
+            </Slider>
+        </div>
+    )
+};
+
+export default Carousel;

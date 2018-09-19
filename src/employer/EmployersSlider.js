@@ -3,10 +3,10 @@ import Carousel from '../common/Carousel'
 
 export default class EmployersSlider extends Component {
     render() {
-        const {settings, employers} = this.props;
+        const {employers} = this.props;
 
         return (
-            <Carousel settings={settings}>
+            <Carousel>
                 {
                     employers.map((employer) =>
                         <div>

@@ -90,18 +90,6 @@ const employers = [
     },
 ];
 
-const employers_slider_settings = {
-    arrows: true,
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    className: 'carousel',
-};
-
-// todo Вопрос. Надо ли протаскивать, например, settings через пропсы всех дочерних компонентов от App в Carousel или можно задать переменную employers_slider_settings в EmployersSlider? Тот же вопрос про employers.
-
 class App extends Component {
     render() {
         return (
@@ -109,7 +97,7 @@ class App extends Component {
                 <Header/>
                 <FeaturesStrip features={features}/>
                 <CoursesStrip courses={courses} className="strip_background_grey"/>
-                <EmployersStrip settings={employers_slider_settings} employers={employers}/>
+                <EmployersStrip employers={employers}/>
                 <Footer/>
             </div>
         );
