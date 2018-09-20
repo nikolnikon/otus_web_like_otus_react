@@ -1,0 +1,42 @@
+.form {
+  border: 1px solid #d7d7d7;
+    border-radius: 10px;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.form__field_full {
+    width: 100%;
+}
+
+.form__input {
+    margin-top: 5px;
+}
+
+.form__input_size_large {
+    padding: 10px 0px;
+}
+
+.form__label_bold {
+    font-weight: bold;
+}
+
+.form__button {
+    background-clip: border-box;
+    background-color: #3a9dfa;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 10px 10px;
+    color: #ffffff;
+    font-size: 15px;
+    border-style: none;
+    margin-top: 20px;
+}
+
+.form__button:hover {
+    background-color: #1f5e9a;
+}

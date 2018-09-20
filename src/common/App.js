@@ -5,7 +5,9 @@ import Header from './Header'
 import FeaturesStrip from '../feature/FeaturesStip'
 import CoursesStrip from '../course/CoursesStrip'
 import EmployersStrip from '../employer/EmployersStrip'
+import RegistrationSegment from '../user/RegistrationSegment'
 import Footer from "./Footer"
+import Main from "./Main";
 
 const features = [
     {
@@ -90,14 +92,27 @@ const employers = [
     },
 ];
 
+const user = {
+    username: 'nikolnikon@gmail.com',
+    email: 'nikolnikon@gmail.com',
+    first_name: 'Николай',
+    last_name: 'Никонов',
+    password: 'legoland',
+    confirm_password: 'legoland',
+};
+
 class App extends Component {
+
     render() {
         return (
             <div className="page">
                 <Header/>
-                <FeaturesStrip features={features}/>
-                <CoursesStrip courses={courses} className="strip_background_grey"/>
-                <EmployersStrip employers={employers}/>
+                <Main>
+                    {/*<FeaturesStrip features={features}/>*/}
+                    {/*<CoursesStrip courses={courses} className="strip_background_grey"/>*/}
+                    {/*<EmployersStrip employers={employers}/>*/}
+                    <RegistrationSegment user={user}/>
+                </Main>
                 <Footer/>
             </div>
         );

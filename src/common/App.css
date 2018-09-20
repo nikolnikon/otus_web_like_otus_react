@@ -6,6 +6,7 @@ body {
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .page__header {
@@ -33,6 +34,14 @@ body {
     justify-content: space-between;
 }
 
+.row_justify_center {
+    justify-content: center;
+}
+
 .row_wrapped {
     flex-wrap: wrap;
+}
+
+.h_centered {
+    text-align: center;
 }
