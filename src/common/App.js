@@ -105,17 +105,17 @@ class App extends Component {
 
     render() {
         return (
-            <div className="page">
-                <Header/>
-                <Main>
-                    {/*<FeaturesStrip features={features}/>*/}
-                    {/*<CoursesStrip courses={courses} className="strip_background_grey"/>*/}
-                    {/*<EmployersStrip employers={employers}/>*/}
-                    <RegistrationSegment user={user}/>
-                </Main>
-                <Footer/>
-            </div>
-        );
+            <React.Fragment>
+            <Header/>
+            <Main>
+                {/*<FeaturesStrip features={features}/>*/}
+                {/*<CoursesStrip courses={courses} className="strip_background_grey"/>*/}
+                {/*<EmployersStrip employers={employers}/>*/}
+                <RegistrationSegment user={user}/>
+            </Main>
+            <Footer/>
+            </React.Fragment>
+        )
     }
 }
 
