@@ -33,7 +33,7 @@ class RegistrationForm extends Component {
 
     render() {
         return(
-            <Form>
+            <Form className="registration__form">
                 <input
                     type='hidden'
                     name='csrfmiddlewaretoken'

@@ -4,7 +4,7 @@ import './Form.css'
 class Form extends Component {
     render() {
         return (
-            <div className="form registration__form">
+            <div className={`form ${this.props.className}`}>
                 <form>
                     {this.props.children}
                 </form>
