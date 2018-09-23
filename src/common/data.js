@@ -80,13 +80,13 @@ export const employers = [
         logo: 'images/employers/mybook.png',
     },
 ];
-
-export const user = {
-    username: 'nikolnikon@gmail.com',
-    email: 'nikolnikon@gmail.com',
-    first_name: 'Николай',
-    last_name: 'Никонов',
-    password: 'legoland',
-    confirm_password: 'legoland',
-};
+//
+// export const user = {
+//     username: 'nikolnikon@gmail.com',
+//     email: 'nikolnikon@gmail.com',
+//     first_name: 'Николай',
+//     last_name: 'Никонов',
+//     password: 'legoland',
+//     confirm_password: 'legoland',
+// };
 

@@ -3,8 +3,35 @@ import './RegistrationForm.css'
 import Form from '../common/Form'
 
 class RegistrationForm extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    handleUsernameChanged = (e) => (
+        this.props.onUsernameChanged(e.target.value)
+    );
+
+    handleEmailChanged = (e) => (
+      this.props.onEmailChanged(e.target.value)
+    );
+
+    handleFirstNameChanged = (e) => (
+        this.props.onFirstNameChanged(e.target.value)
+    );
+
+    handleLastNameChanged = (e) => (
+        this.props.onLastNameChanged(e.target.value)
+    );
+
+    handlePasswordChanged = (e) => (
+        this.props.onPasswordChanged(e.target.value)
+    );
+
+    handleConfirmPasswordChanged = (e) => (
+        this.props.onConfirmPasswordChanged(e.target.value)
+    );
+
     render() {
-        const {user} = this.props;
         return(
             <Form>
                 <input
@@ -20,7 +47,8 @@ class RegistrationForm extends Component {
                             name="first_name"
                             maxLength="30"
                             id="id_first_name"
-                            value={user.first_name}
+                            value={this.props.user.first_name}
+                            onChange={this.handleFirstNameChanged}
                             className="form__input form__input_size_large"
                         />
                     </div>
@@ -31,7 +59,8 @@ class RegistrationForm extends Component {
                             name="last_name"
                             maxLength="150"
                             id="id_last_name"
-                            value={user.last_name}
+                            value={this.props.user.last_name}
+                            onChange={this.handleLastNameChanged}
                             className="form__input form__input_size_large"
                         />
                     </div>
@@ -48,7 +77,8 @@ class RegistrationForm extends Component {
                             autoFocus
                             required
                             id="id_username"
-                            value={user.username}
+                            value={this.props.user.username}
+                            onChange={this.handleUsernameChanged}
                             className="form__input form__input_size_large"
                         />
                     </div>
@@ -59,7 +89,8 @@ class RegistrationForm extends Component {
                             name="email"
                             required
                             id="id_email"
-                            value={user.email}
+                            value={this.props.user.email}
+                            onChange={this.handleEmailChanged}
                             className="form__input form__input_size_large"
                         />
                     </div>
@@ -73,7 +104,8 @@ class RegistrationForm extends Component {
                             name="password1"
                             required
                             id="id_password1"
-                            value={user.password}
+                            value={this.props.user.password}
+                            onChange={this.handlePasswordChanged}
                             className="form__input form__input_size_large"
                         />
                     </div>
@@ -85,7 +117,8 @@ class RegistrationForm extends Component {
                             name="password2"
                             required
                             id="id_password2"
-                            value={user.confirmed_password}
+                            value={this.props.user.confirmed_password}
+                            onChange={this.handleConfirmPasswordChanged}
                             className="form__input form__input_size_large"
                         />
                     </div>
