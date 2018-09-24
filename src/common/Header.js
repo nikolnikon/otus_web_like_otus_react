@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
-import './Header.css';
-import Menu from './Menu';
-import Logo from './Logo';
+import React, { Component } from 'react'
+import './Header.css'
+import Menu from './Menu'
+import Logo from './Logo'
+import AuthButtonsBlock from '../user/AuthButtonsBlock'
+import { Link } from 'react-router-dom'
 
 // todo Вопрос. Где лучше объявлять переменные типа header_menu_items? Варианты, которые приходят на ум: App.js, Header.js (global scope), Header.js (внутри метода render). Последний вариант, как я понимаю, будет приводить к перерисовке Menu всякий раз, когда перерисовывается Header, т.к. при этом будут меняться props для Menu.
 
@@ -24,6 +26,7 @@ class Header extends Component {
                         <Menu className="header__menu"
                               items={header_menu_items}
                         />
+                        <AuthButtonsBlock/>
                     </div>
                 </div>
             </header>

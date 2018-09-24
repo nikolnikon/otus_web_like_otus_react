@@ -20,3 +20,7 @@
 .header__menu {
     margin-left: 25px;
 }
+
+.header__auth {
+    margin-left: auto;
+}
