@@ -4,7 +4,7 @@ import CoursesStrip from '../course/CoursesStrip'
 import EmployersStrip from '../employer/EmployersStrip'
 import { features, courses, employers } from './data'
 
-class Main extends Component {
+class HomeSegment extends Component {
     render() {
         return (
             <React.Fragment>
@@ -16,4 +16,4 @@ class Main extends Component {
     }
 }
 
-export default Main;
+export default HomeSegment;
