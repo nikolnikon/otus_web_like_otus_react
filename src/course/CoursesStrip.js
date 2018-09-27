@@ -7,7 +7,7 @@ class CoursesStrip extends Component {
         const {courses} = this.props;
         return (
             <Strip title={'Скоро начнутся'} className={this.props.className}>
-                <div className="row row_justify_space-between">
+                <div className="row row_justify_center">
                     {
                         courses.map((course) =>
                             <CourseCard

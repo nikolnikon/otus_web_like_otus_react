@@ -4,6 +4,10 @@ import './CourseCard.css'
 class CourseCard extends Component {
     render() {
         const {course} = this.props;
+        const formatter = new Intl.DateTimeFormat('ru', {
+            day: 'numeric',
+            month: 'long',
+        });
         return (
             <div className="course-card">
                 <div className="course-card__image">
@@ -12,9 +16,11 @@ class CourseCard extends Component {
                 <div className="course-card__content">
                     <h3 className="course-card__header">{course.name}</h3>
                     <div className="course-card__description">
-                        <span className="course-card__start-date">C {course.start_date}, {course.duration} месяцев</span>
+                        <span className="course-card__start-date">
+                            C {formatter.format(Date.parse(course.start_date))}, {course.duration} месяцев
+                        </span>
                         <p>
-                            {course.description}
+                            {course.brief}
                         </p>
                     </div>
                 </div>

@@ -6,9 +6,10 @@ import CoursesStrip from "./CoursesStrip";
 
 class CourseSegment extends Component {
     componentDidMount() {
-        const {dispatch, limit} = this.props;
+        const {dispatch} = this.props;
         dispatch(fetchCourses('http://localhost:8000'))
     }
+
     render() {
         const {courses} = this.props;
         return (

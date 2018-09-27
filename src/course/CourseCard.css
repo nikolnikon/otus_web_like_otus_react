@@ -1,8 +1,8 @@
 .course-card {
     width: 350px;
-    height: 445px;
+    /*height: 445px;*/
     background-color: #ffffff;
-    margin-bottom: 40px;
+    margin: 0px 20px 40px;
 }
 
 .course-card__content {
