@@ -6,7 +6,7 @@ class Strip extends Component {
         return (
             <div className={`strip ${this.props.className}`}>
                 <div className="container">
-                    <h2>{this.props.header}</h2>
+                    <h2 className="strip__title">{this.props.title}</h2>
                     {this.props.children}
                 </div>
             </div>

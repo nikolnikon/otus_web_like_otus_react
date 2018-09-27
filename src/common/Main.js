@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import HomeSegment from './HomeSegment'
 import RegistrationSegment from '../user/RegistrationSegment'
 import LoginSegment from '../user/LoginSegment'
+import CourseSegment from "../course/CourseSegment";
 
 class Main extends Component {
     render() {
@@ -28,6 +29,7 @@ class Main extends Component {
                             onPasswordChanged={this.props.onPasswordChanged}
                         />
                     )}/>
+                    <Route exact path='/courses' component={CourseSegment}/>
                 </Switch>
             </main>
         )

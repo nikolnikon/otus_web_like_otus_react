@@ -16,15 +16,15 @@ export const fetchCoursesFailure = (error) => ({
   payload: { error }
 });
 
-export function fetchCourses() {
+export function fetchCourses(url) {
   return dispatch => {
     dispatch(fetchCoursesBegin());
-    return fetch("http://127.0.0.1/courses")
+    return fetch(`${url}/api/courses/`)
       .then(handleErrors)
-      .then(res => res.json())
-      .then(json => {
-        dispatch(fetchCoursesSuccess(json.courses));
-        return json.courses;
+      .then(response => response.json())
+      .then(data => {
+        dispatch(fetchCoursesSuccess(data));
+        return data;
       })
       .catch(error => dispatch(fetchCoursesFailure(error)));
   };
