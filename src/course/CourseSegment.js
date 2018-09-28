@@ -4,6 +4,10 @@ import { fetchCourses} from "../actions/courseActions";
 import CoursesStrip from "./CoursesStrip";
 
 
+// todo Вопрос. Где лучше делать загрузку курсов с сервера? Выбирал между родительскими элементами компонентов, которым
+// необходимы курсы, и каким-то очень глобальным компонентом типа App или Main. В первом случае не надо передавать
+// данные через большое количество промежуточных компонентов, во втором меньше обращений к сервису.
+
 class CourseSegment extends Component {
     componentDidMount() {
         const {dispatch} = this.props;

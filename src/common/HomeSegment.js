@@ -6,6 +6,7 @@ import { features, courses, employers } from './data'
 import {fetchCourses} from "../actions/courseActions";
 import {connect} from "react-redux";
 
+// todo Сделать обработку ошибок
 class HomeSegment extends Component {
     componentDidMount() {
         const {dispatch} = this.props;
@@ -27,7 +28,7 @@ class HomeSegment extends Component {
 function mapStateToProps(state) {
     return {
         courses: state.courses.items,
-        loading: state.courses.loading,
+        loading: state.courses.loading, // может потребоваться для отображения процесса загрузки
         error: state.courses.error,
     }
 }
