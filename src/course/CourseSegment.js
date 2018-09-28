@@ -13,7 +13,7 @@ class CourseSegment extends Component {
     render() {
         const {courses} = this.props;
         return (
-            <CoursesStrip courses={courses} className="strip_background_grey"/>
+            <CoursesStrip title="Список курсов для IT специалистов" courses={courses} className="strip_background_grey"/>
         )
     }
 }

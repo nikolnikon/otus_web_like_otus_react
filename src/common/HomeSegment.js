@@ -17,7 +17,7 @@ class HomeSegment extends Component {
         return (
             <React.Fragment>
                 <FeaturesStrip features={features}/>
-                <CoursesStrip courses={courses} className="strip_background_grey"/>
+                <CoursesStrip title="Скоро начнутся" courses={courses} className="strip_background_grey"/>
                 <EmployersStrip employers={employers}/>
             </React.Fragment>
         )
