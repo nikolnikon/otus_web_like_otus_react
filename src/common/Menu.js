@@ -10,7 +10,12 @@ class Menu extends Component {
             <nav className={`menu ${className}`}>
                 {
                     items.map((item) =>
-                        <NavLink to={item.url} className="menu__item" activeClassName="menu__item" key={item.name}>{item.name}</NavLink>
+                        <NavLink to={item.url}
+                                 className="menu__item"
+                                 activeClassName="menu__item"
+                                 key={item.name}>
+                            {item.name}
+                        </NavLink>
                     )
                 }
             </nav>
