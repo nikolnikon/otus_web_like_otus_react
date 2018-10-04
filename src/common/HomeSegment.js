@@ -25,12 +25,12 @@ class HomeSegment extends Component {
     }
 }
 
-function mapStateToProps(state) {
-    return {
-        courses: state.courses.items,
-        loading: state.courses.loading, // может потребоваться для отображения процесса загрузки
-        error: state.courses.error,
-    }
-}
-
-export default connect(mapStateToProps)(HomeSegment)
+export default connect(
+    (state) => (
+        {
+            courses: state.courses.items,
+            loading: state.courses.loading,
+            error: state.courses.error,
+        }
+    )
+)(HomeSegment)

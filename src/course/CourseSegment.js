@@ -22,12 +22,12 @@ class CourseSegment extends Component {
     }
 }
 
-function mapStateToProps(state) {
-    return {
-        courses: state.courses.items,
-        loading: state.courses.loading,
-        error: state.courses.error,
-    }
-}
-
-export default connect(mapStateToProps)(CourseSegment)
+export default connect(
+    (state) => (
+        {
+            courses: state.courses.items,
+            loading: state.courses.loading,
+            error: state.courses.error,
+        }
+    )
+)(CourseSegment)
