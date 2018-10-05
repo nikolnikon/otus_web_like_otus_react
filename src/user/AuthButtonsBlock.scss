@@ -1,0 +1,26 @@
+@import '../common/App';
+
+$auth-button-border-color: #8d8d8d;
+$auth-button-background-color-hover: #3487db;
+
+.auth {
+    display: inline-block;
+    text-align: right;
+    vertical-align: baseline;
+    line-height: 70px;
+}
+
+.auth__button {
+    border: 1px solid $auth-button-border-color;
+    border-radius: 35px;
+    cursor: pointer;
+    background-color: $main-background-color-light;
+    line-height: 35px;
+    margin: 0px 3px;
+}
+
+.auth__button:hover {
+    background-color: $auth-button-background-color-hover;
+    border-color: $auth-button-background-color-hover;
+    color: $main-background-color-light;
+}

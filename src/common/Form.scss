@@ -1,0 +1,47 @@
+@import 'App';
+
+$form-button-background-color: #3a9dfa;
+$form-button-background-color-hover: #1f5e9a;
+
+.form {
+  border: 1px solid $main-border-color;
+  border-radius: 10px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.form__field_full {
+  width: 100%;
+}
+
+.form__input {
+  margin-top: 5px;
+}
+
+.form__input_size_large {
+  padding: 10px 0px;
+}
+
+.form__label_bold {
+  font-weight: bold;
+}
+
+.form__button {
+  background-clip: border-box;
+  background-color: $form-button-background-color;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 10px 10px;
+  color: $main-background-color-light;
+  font-size: 15px;
+  border-style: none;
+  margin-top: 20px;
+}
+
+.form__button:hover {
+  background-color: $form-button-background-color-hover;
+}

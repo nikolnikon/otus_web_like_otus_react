@@ -1,0 +1,16 @@
+@import '../common/App';
+
+.strip {
+  padding: 0 0 20px;
+  border-bottom: 1px solid $main-border-color;
+}
+
+.strip_background_grey {
+  background-color: $main-background-color-dark;
+}
+
+.strip__title {
+  margin: 0px;
+  padding: 20px 0px;
+}
+

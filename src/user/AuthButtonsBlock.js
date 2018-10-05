@@ -1,5 +1,5 @@
 import React from 'react'
-import './AuthButtonsBlock.css'
+import './AuthButtonsBlock.scss'
 import { Link } from 'react-router-dom'
 
 const AuthButtonsBlock = () => (

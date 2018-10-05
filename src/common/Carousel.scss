@@ -1,0 +1,19 @@
+@import 'App';
+
+.carousel {
+  padding: 40px;
+  .slick-prev:before, .slick-next:before {
+    color: $main-border-color;
+  }
+  .slick-list {
+    .slick-track{
+      display: flex;
+      .slick-slide {
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
