@@ -6,3 +6,8 @@
 .strip_background_grey {
     background-color: #ecf0f1;
 }
+
+.strip__title {
+    margin: 0px;
+    padding: 20px 0px;
+}

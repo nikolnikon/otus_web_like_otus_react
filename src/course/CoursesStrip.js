@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import Strip from '../common/Strip';
-import CourseCard from './CourseCard';
+import React, { Component } from 'react'
+import Strip from '../common/Strip'
+import CourseCard from './CourseCard'
 
 class CoursesStrip extends Component {
     render() {
-        const {courses} = this.props;
+        const {courses, title} = this.props;
         return (
-            <Strip header={'Скоро начнутся'} className={this.props.className}>
-                <div className="row row_justify_space-between">
+            <Strip title={title} className={this.props.className}>
+                <div className="row row_justify_center">
                     {
                         courses.map((course) =>
                             <CourseCard

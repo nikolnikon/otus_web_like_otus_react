@@ -18,13 +18,13 @@ body {
     /*flex: 1 0 auto;*/
 /*}*/
 
-.page__header {
-    margin-bottom: 20px;
-}
+/*.page__header {*/
+    /*margin-bottom: 20px;*/
+/*}*/
 
-.page__footer {
-    margin-top: 40px;
-}
+/*.page__footer {*/
+    /*margin-top: 40px;*/
+/*}*/
 
 .container {
     max-width: 1170px;
@@ -41,6 +41,7 @@ body {
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .row_justify_space-between {
