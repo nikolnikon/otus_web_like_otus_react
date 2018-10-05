@@ -12,7 +12,7 @@ const footer_menu_items = [
 class Footer extends Component {
     render() {
         return (
-            <footer className="footer">
+            <footer className="footer page__footer">
                 <div className="container footer__container">
                     <div className="row footer__row">
                         <div className="social">
