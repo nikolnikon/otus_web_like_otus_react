@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
-import './Form.css'
+import './Form.scss'
 
 const Form = (props) => (
     <div className={classNames('form', props.className)}>

@@ -1,0 +1,23 @@
+@import '../common/App';
+
+.course-card {
+  width: 350px;
+  background-color: $main-background-color-light;
+  margin: 0px 20px 40px;
+}
+
+.course-card__content {
+  padding: 0 10px;
+}
+
+.course-card__start-date {
+  color: $aux-text-color;
+}
+
+.course-card__extra-content {
+  padding: 0 10px 5px;
+}
+
+.course-card__extra-content_bold {
+  font-weight: bold;
+}

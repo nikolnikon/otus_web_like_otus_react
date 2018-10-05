@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import classNames from 'classnames'
-import './Logo.css';
+import './Logo.scss';
 
 
 const Logo = (props) => (

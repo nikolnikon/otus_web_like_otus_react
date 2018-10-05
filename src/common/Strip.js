@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
-import './Strip.css'
+import './Strip.scss'
 
 class Strip extends Component {
     render() {

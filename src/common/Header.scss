@@ -1,0 +1,28 @@
+@import 'App';
+
+.header {
+  background: $main-background-color-light;
+  height: 68px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid $main-border-color;
+  z-index: 30;
+}
+
+.header__container {
+  width: 100%;
+}
+
+.header__logo {
+  width: 140px;
+  display: table-cell;
+}
+
+.header__menu {
+  margin-left: 25px;
+}
+
+.header__auth {
+  margin-left: auto;
+}
